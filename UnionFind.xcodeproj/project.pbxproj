@@ -15,6 +15,9 @@
 		FE6334DB2525D05F00DC2A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6334D92525D05F00DC2A8F /* LaunchScreen.storyboard */; };
 		FE6334E62525D05F00DC2A8F /* UnionFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6334E52525D05F00DC2A8F /* UnionFindTests.swift */; };
 		FE6334F12525D05F00DC2A8F /* UnionFindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6334F02525D05F00DC2A8F /* UnionFindUITests.swift */; };
+		FE63350225262D6C00DC2A8F /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63350125262D6C00DC2A8F /* UnionFind.swift */; };
+		FE63350F2526F67800DC2A8F /* UnionFindByQuickUnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63350E2526F67800DC2A8F /* UnionFindByQuickUnion.swift */; };
+		FE7754DC2527352400BF68FC /* UnionFindByQuickUnionUseRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7754DB2527352400BF68FC /* UnionFindByQuickUnionUseRank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FE6334EC2525D05F00DC2A8F /* UnionFindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnionFindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6334F02525D05F00DC2A8F /* UnionFindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFindUITests.swift; sourceTree = "<group>"; };
 		FE6334F22525D05F00DC2A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE63350125262D6C00DC2A8F /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
+		FE63350E2526F67800DC2A8F /* UnionFindByQuickUnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFindByQuickUnion.swift; sourceTree = "<group>"; };
+		FE7754DB2527352400BF68FC /* UnionFindByQuickUnionUseRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFindByQuickUnionUseRank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				FE6334CE2525D05D00DC2A8F /* AppDelegate.swift */,
 				FE6334D02525D05D00DC2A8F /* SceneDelegate.swift */,
 				FE6334D22525D05D00DC2A8F /* ViewController.swift */,
+				FE63350125262D6C00DC2A8F /* UnionFind.swift */,
+				FE63350E2526F67800DC2A8F /* UnionFindByQuickUnion.swift */,
+				FE7754DB2527352400BF68FC /* UnionFindByQuickUnionUseRank.swift */,
 				FE6334D42525D05D00DC2A8F /* Main.storyboard */,
 				FE6334D72525D05F00DC2A8F /* Assets.xcassets */,
 				FE6334D92525D05F00DC2A8F /* LaunchScreen.storyboard */,
@@ -258,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE63350F2526F67800DC2A8F /* UnionFindByQuickUnion.swift in Sources */,
+				FE7754DC2527352400BF68FC /* UnionFindByQuickUnionUseRank.swift in Sources */,
+				FE63350225262D6C00DC2A8F /* UnionFind.swift in Sources */,
 				FE6334D32525D05D00DC2A8F /* ViewController.swift in Sources */,
 				FE6334CF2525D05D00DC2A8F /* AppDelegate.swift in Sources */,
 				FE6334D12525D05D00DC2A8F /* SceneDelegate.swift in Sources */,
