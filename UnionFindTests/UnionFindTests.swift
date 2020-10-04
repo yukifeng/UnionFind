@@ -20,6 +20,21 @@ class UnionFindTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testUFObj(){
+        let uf = UnionFindObj<NSInteger>()
+        uf.makeSet(e: 1)
+        uf.makeSet(e: 2)
+        uf.makeSet(e: 3)
+        uf.makeSet(e: 4)
+        uf.union(e1: 1, e2: 2)
+        uf.union(e1: 3, e2: 4)
+
+        XCTAssert(uf.isSame(e1: 1, e2: 2) == true, "cuowu")
+        XCTAssert(uf.isSame(e1: 1, e2: 3) == false, "cuowu")
+        uf.union(e1: 1, e2: 3)
+        XCTAssert(uf.isSame(e1: 2, e2: 4) == true, "cuowu")
+    }
+    
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -134,18 +149,18 @@ class UnionFindTests: XCTestCase {
         }
     }
     
-    func testQFTime() throws {
-        self.measure {
-            // Put the code you want to measure the time of here.
-            createUnionFindRandom(uf: UnionFindByQuickFind(count: count))
-        }
-    }
-    
-    func testQUTime() throws {
-        self.measure {
-            createUnionFindRandom(uf: UnionFindByQuickUnion(count: count))
-        }
-    }
+//    func testQFTime() throws {
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//            createUnionFindRandom(uf: UnionFindByQuickFind(count: count))
+//        }
+//    }
+//
+//    func testQUTime() throws {
+//        self.measure {
+//            createUnionFindRandom(uf: UnionFindByQuickUnion(count: count))
+//        }
+//    }
     
     func testQURackTime() throws {
         self.measure {

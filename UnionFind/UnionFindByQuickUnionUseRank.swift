@@ -8,6 +8,7 @@
 import Foundation
 
 class UnionFindByQuickUnionUseRank: UnionFindByQuickUnion {
+    /// 记录树的高度
     var ranks = [Int]()
     
     override init(count: Int) {
@@ -39,7 +40,7 @@ class UnionFindByQuickUnionUseRank: UnionFindByQuickUnion {
 }
 
 /// 并查集基于rank和path Compression路径压缩的优化
-class UnionFindByQuickUnionUseRank_PC: UnionFindByQuickUnion{
+class UnionFindByQuickUnionUseRank_PC: UnionFindByQuickUnionUseRank{
     override func find(e: Int) -> Int {
         checkRange(e: e)
         
@@ -53,7 +54,7 @@ class UnionFindByQuickUnionUseRank_PC: UnionFindByQuickUnion{
 
 
 /// 并查集基于rank和path Spliting路径分裂的优化
-class UnionFindByQuickUnionUseRank_PS: UnionFindByQuickUnion{
+class UnionFindByQuickUnionUseRank_PS: UnionFindByQuickUnionUseRank{
     override func find(e: Int) -> Int {
         checkRange(e: e)
         var v = e
@@ -69,7 +70,7 @@ class UnionFindByQuickUnionUseRank_PS: UnionFindByQuickUnion{
 
 
 /// 并查集基于rank和path Halving路径减半的优化
-class UnionFindByQuickUnionUseRank_PH: UnionFindByQuickUnion{
+class UnionFindByQuickUnionUseRank_PH: UnionFindByQuickUnionUseRank{
     override func find(e: Int) -> Int {
         checkRange(e: e)
         

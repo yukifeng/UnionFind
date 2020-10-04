@@ -17,7 +17,7 @@ class UnionFind {
     }
     
     func checkRange(e:Int) {
-        assert(e >= 0 && e < parents.count, "\(e)元素越界-\(parents.count)")
+        assert(e >= 0, "\(e)元素越界")
     }
     
     func find(e:Int) -> Int{

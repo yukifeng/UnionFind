@@ -33,6 +33,7 @@ class UnionFindByQuickUnion:UnionFind {
 }
 
 class UnionFindByQuickUnionUseSize: UnionFindByQuickUnion {
+    /// 记录节点数量
     var sizes = [Int]()
     
     override init(count: Int) {
